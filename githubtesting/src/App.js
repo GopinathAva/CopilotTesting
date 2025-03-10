@@ -27,8 +27,13 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    // Log formData to the console for debugging purposes
     console.log(formData);
   };
+
+  function calculateDaysBetweenDates(begin, end) {
+    
+  }
 
   return (
     <div className="App">
@@ -111,7 +116,7 @@ function App() {
             value={formData.country}
             onChange={handleChange}
           >
-            <option value="">--Select a country--</option>
+            <option value="placeholder">--Select a country--</option>
             <option value="USA">USA</option>
             <option value="Canada">Canada</option>
             <option value="UK">UK</option>
