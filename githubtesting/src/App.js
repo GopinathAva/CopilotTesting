@@ -27,8 +27,17 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    // Log formData to the console for debugging purposes
     console.log(formData);
   };
+
+  function calculateDaysBetweenDates(begin, end) {
+    const beginDate = new Date(begin);
+    const endDate = new Date(end);
+    const timeDifference = endDate - beginDate;
+    const daysDifference = timeDifference / (1000 * 3600 * 24);
+    return daysDifference;
+  }
 
   return (
     <div className="App">
