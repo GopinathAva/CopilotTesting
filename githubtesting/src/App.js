@@ -116,7 +116,7 @@ function App() {
             value={formData.country}
             onChange={handleChange}
           >
-            <option value="placeholder">--Select a country--</option>
+            <option value="">--Select a country--</option>
             <option value="USA">USA</option>
             <option value="Canada">Canada</option>
             <option value="UK">UK</option>
